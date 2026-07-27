@@ -97,7 +97,7 @@ Veritabanı altyapısında doğrudan çalıştırılacak tablo mimarisi ve kıs�
 
 Sisteme kayıtlı kurumsal müşterilerin cari ve vergi verilerini tutar.
 
-| Kolon Adı | Veri Tipi | Null Olabilir mi? | Kısıtlama / Açıklama |
+| Kolon Adı | Veri Tipi | Nullable | Kısıtlama / Açıklama |
 | --- | --- | --- | --- |
 | `CompanyID` | `INT` | Hayır | `PRIMARY KEY`, `IDENTITY(1,1)` |
 | `CompanyName` | `NVARCHAR(150)` | Hayır | Şirket Resmi Unvanı |
@@ -114,7 +114,7 @@ Sisteme kayıtlı kurumsal müşterilerin cari ve vergi verilerini tutar.
 
 Kurumsal şirketlere bağlı araçların plaka, limit ve izin verilen yakıt türü kurallarını tutar.
 
-| Kolon Adı | Veri Tipi | Null Olabilir mi? | Kısıtlama / Açıklama |
+| Kolon Adı | Veri Tipi | Nullable | Kısıtlama / Açıklama |
 | --- | --- | --- | --- |
 | `VehicleID` | `INT` | Hayır | `PRIMARY KEY`, `IDENTITY(1,1)` |
 | `CompanyID` | `INT` | Hayır | `FOREIGN KEY` -> `Companies(CompanyID)` |
@@ -131,7 +131,7 @@ Kurumsal şirketlere bağlı araçların plaka, limit ve izin verilen yakıt tü
 
 Saha pompalarından alışveriş yapan bireysel sürücülerin verilerini tutar.
 
-| Kolon Adı | Veri Tipi | Null Olabilir mi? | Kısıtlama / Açıklama |
+| Kolon Adı | Veri Tipi | Nullable | Kısıtlama / Açıklama |
 | --- | --- | --- | --- |
 | `CustomerID` | `INT` | Hayır | `PRIMARY KEY`, `IDENTITY(1,1)` |
 | `FirstName` | `NVARCHAR(50)` | Hayır | Müşteri Adı |
@@ -147,7 +147,7 @@ Saha pompalarından alışveriş yapan bireysel sürücülerin verilerini tutar.
 
 Pompalardan gerçekleşen tüm satış hareketlerini loglayan ana işlem tablosudur.
 
-| Kolon Adı | Veri Tipi | Null Olabilir mi? | Kısıtlama / Açıklama |
+| Kolon Adı | Veri Tipi | Nullable | Kısıtlama / Açıklama |
 | --- | --- | --- | --- |
 | `TransactionID` | `BIGINT` | Hayır | `PRIMARY KEY`, `IDENTITY(1,1)` |
 | `StationID` | `INT` | Hayır | İşlemin yapıldığı istasyon ID |
