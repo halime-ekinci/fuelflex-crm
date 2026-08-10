@@ -2,7 +2,7 @@
 
 Bu proje, petrol istasyonları sahasındaki otomasyon sistemleri ile merkez CRM altyapısını entegre eden; kurumsal filo limit kontrolü, yakıt türü kısıtlaması ve bireysel müşteri sadakat puanı yönetimini sağlayan **C# .NET 8 RESTful Web API** ve **MSSQL** mimarisidir.
 
----
+--- 
 
 ## 📐 Mimari ve Teknolojiler
 
